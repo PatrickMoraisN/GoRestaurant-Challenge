@@ -6,6 +6,7 @@ import Logo from '../../assets/logo.svg';
 interface HeaderProps {
   openModal: () => void;
 }
+
 function Header(props:HeaderProps) {
     const { openModal } = props;
 
