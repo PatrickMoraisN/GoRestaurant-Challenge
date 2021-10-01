@@ -6,22 +6,32 @@ import Modal from '../Modal';
 import Input from '../Input';
 import { FormHandles } from '@unform/core';
 
+interface FoodProps {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  available: boolean;
+  image: string;
+}
+
 interface ModalAddFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleAddFood: () => void;
+  handleAddFood: (food: FoodProps) => void;
 }
 
 function ModalAddFood(props: ModalAddFoodProps) {
     const formRef = createRef<FormHandles>();
 
-  const handleSubmit = async data => {
+  const handleSubmit = async (data: FoodProps) => {
     const { setIsOpen, handleAddFood } = props;
 
     handleAddFood(data);
     setIsOpen();
   };
     const { isOpen, setIsOpen } = props;
+    console.log(isOpen)
 
     return (
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>

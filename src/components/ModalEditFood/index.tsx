@@ -9,15 +9,33 @@ import { FormHandles } from '@unform/core';
 interface ModalEditFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  editingFood: () => void;
-  handleUpdateFood: () => void;
+  editingFood: FoodEditingProps;
+  handleUpdateFood: (food: FoodProps) => Promise<void>;
+}
+
+interface FoodProps {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  available: boolean;
+  image: string;
+}
+
+interface FoodEditingProps {
+  id?: number;
+  name?: string;
+  description?: string;
+  price?: number;
+  available?: boolean;
+  image?: string;
 }
 
 function ModalEditFood(props: ModalEditFoodProps) {
     const formRef = createRef<FormHandles>()
 
 
-  const handleSubmit = async (data) => {
+  const handleSubmit = async (data: FoodProps) => {
     const { setIsOpen, handleUpdateFood } = props;
 
     handleUpdateFood(data);

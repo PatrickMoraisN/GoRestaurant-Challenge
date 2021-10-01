@@ -6,17 +6,26 @@ import React from 'react';
 
 interface FoodObject {
   available: boolean;
-  id: number;
+  id: any;
   image: string;
   name: string;
   description: string;
   price: number;
 }
 
+interface FoodEditingProps {
+  id?: number;
+  name?: string;
+  description?: string;
+  price?: number;
+  available?: boolean;
+  image?: string;
+}
+
 interface FoodProps {
   food: FoodObject;
-  handleDelete: () => void;
-  handleEditFood: () => void;
+  handleDelete: (id: number) => Promise<void>;
+  handleEditFood: (food: FoodEditingProps) => void;
 }
 function Food(props: FoodProps) {
     const { available } = props.food;

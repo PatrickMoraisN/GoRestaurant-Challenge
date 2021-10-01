@@ -13,8 +13,10 @@ function Modal(props: ModalProps) {
 
 
     React.useEffect(() => {
-        setModalStatus(isOpen)
-    }, [modalStatus])
+        if(isOpen !== modalStatus) {
+          setModalStatus(isOpen)
+        }
+    }, [isOpen])
 
     const { children, setIsOpen } = props;
 
