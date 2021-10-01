@@ -11,7 +11,7 @@ import { Container } from './styles';
 
 interface InputProps {
   name: string;
-  icon: string;
+  icon: any;
   rest: any;
 }
 
