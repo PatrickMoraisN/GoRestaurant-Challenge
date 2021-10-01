@@ -9,7 +9,7 @@ interface ModalProps {
 function Modal(props: ModalProps) {
 
     const { isOpen } = props;
-    const [modalStatus, setModalStatus] = React.useState<Boolean>(isOpen);
+    const [modalStatus, setModalStatus] = React.useState<boolean>(isOpen);
 
 
     React.useEffect(() => {
