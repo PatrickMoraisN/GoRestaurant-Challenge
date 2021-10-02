@@ -41,4 +41,5 @@ This project was developed with the following technologies: <br>
 
 ---
 
+# :closed_book: Author
 [![Linkedin Badge](https://img.shields.io/badge/-Patrick%20Morais-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/patrick-morais/)](https://www.linkedin.com/in/patrick-morais/)
