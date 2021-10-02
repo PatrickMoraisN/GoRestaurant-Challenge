@@ -11,6 +11,8 @@
 ---
 
 # :camera_flash: Project Media
+![Imagem do projeto](src/assets/GoGif.gif)
+
 ![Imagem do projeto](src/assets/GoRestaurant3.png)
 
 ![Imagem do projeto](src/assets/GoRestaurant1.png)
@@ -26,7 +28,7 @@ This challenge was aimed at refactoring an old React application built in Javasc
 
 ---
 
-# :rocket:  Tecnologias Usadas
+# :rocket: Technologies
 This project was developed with the following technologies: <br>
 - :heavy_check_mark: **React**
 - :heavy_check_mark: **Styled Components**
@@ -39,5 +41,4 @@ This project was developed with the following technologies: <br>
 
 ---
 
-# :closed_book: Author
 [![Linkedin Badge](https://img.shields.io/badge/-Patrick%20Morais-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/patrick-morais/)](https://www.linkedin.com/in/patrick-morais/)
